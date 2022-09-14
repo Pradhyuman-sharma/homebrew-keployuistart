@@ -11,7 +11,6 @@ class KeployUi < Formula
 
   depends_on "gatsby-cli" => :build
   def install
-      system "npm","install"
       system "gatsby","build"
       bin.install "keployui"
   end
