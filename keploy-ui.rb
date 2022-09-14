@@ -1,6 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+
 class KeployUi < Formula
   desc "UI for Keploy platform that does API testing by dependency mocking without writing any test cases."
   homepage "https://keploy.io"
