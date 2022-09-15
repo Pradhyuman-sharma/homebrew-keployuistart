@@ -9,11 +9,11 @@ class KeployUi < Formula
   sha256 "2fa94446bd57669d506be507e64b9f6fc6ad444d2f0213fab2c3e8e02309c2c7"
   license "Apache-2.0"
 
-  depends_on "gatsby-cli" => :build
+  #depends_on "gatsby-cli" => :build
   
   def install
       #system "npm","gatsby", "build"
       #bin.install_symlink Dir[libexec/"bin/*"]
-      bin.install "keployuistart"
+      bin.install "keployui"
   end
 end
