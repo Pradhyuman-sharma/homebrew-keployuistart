@@ -14,6 +14,6 @@ class KeployUi < Formula
   def install
       #system "npm","gatsby", "build"
       #bin.install_symlink Dir[libexec/"bin/*"]
-      bin.install "start"
+      bin.install "keployui"
   end
 end
