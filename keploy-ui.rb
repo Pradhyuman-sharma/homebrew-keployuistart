@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
+require "language/node"
 class KeployUi < Formula
   desc "UI for Keploy platform that does API testing by dependency mocking without writing any test cases."
   homepage "https://keploy.io"
@@ -10,8 +10,10 @@ class KeployUi < Formula
   license "Apache-2.0"
 
   depends_on "gatsby-cli" => :build
+  
   def install
-      system "gatsby","build"
-      bin.install "keployui"
+      #system "npm","gatsby", "build"
+      #bin.install_symlink Dir[libexec/"bin/*"]
+      bin.install "ui"
   end
 end
